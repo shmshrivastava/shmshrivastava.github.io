@@ -1,11 +1,17 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap"
       rel="stylesheet"
     />
 
     <style media="screen">
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
       body {
         font-family: "Roboto", sans-serif;
         margin: 0px;
@@ -39,6 +45,16 @@
       .center-contents {
         display: flex;
       }
+
+      @media only screen and (max-width: 900px) {
+        .two-columns {
+          display: block;
+        }
+      }
+
+      #display-pic {
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -67,7 +83,7 @@
           >@shivam270295</a
         >).
       </div>
-      <img src="profile.jpg" height="350px" />
+      <img id="display-pic" src="profile.jpg" height="350px" />
     </div>
     <div class="section">
       <p>
